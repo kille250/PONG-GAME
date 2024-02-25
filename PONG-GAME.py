@@ -115,10 +115,10 @@ class Game:
         )
 
     def update_screen(self):
-        self.screen.fill((255, 255, 255))
-        pygame.draw.rect(self.screen, (0, 0, 0), self.player.rect)
-        pygame.draw.rect(self.screen, (0, 0, 0), self.opponent.rect)
-        pygame.draw.ellipse(self.screen, (0, 0, 0), self.ball.rect)
+        self.screen.fill(self.background_color)
+        pygame.draw.rect(self.screen, self.player_color, self.player.rect)
+        pygame.draw.rect(self.screen, self.opponent_color, self.opponent.rect)
+        pygame.draw.ellipse(self.screen, self.ball_color, self.ball.rect)
         pygame.draw.aaline(
             self.screen,
             (0, 0, 0),
