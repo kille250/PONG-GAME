@@ -201,10 +201,10 @@ if __name__ == "__main__":
     player_speed = 7
     opponent_speed = 7
     ball_speed = 7
-    player_color = (255, 0, 0)  # Rot
-    opponent_color = (0, 255, 0)  # Grün
-    ball_color = (0, 0, 255)  # Blau
-    background_color = (255, 255, 255)  # Weiß
+    player_color = (0, 0, 0) # Black
+    opponent_color = (0, 0, 0) # Black
+    ball_color = (0, 0, 0) # Black
+    background_color = (255, 255, 255) # White
 
     game = Game(
         screen_width,
