@@ -1,0 +1,16 @@
+Einfache Aufgaben
+
+Ändere die Farben: Experimentiere mit den Variablen player_color, opponent_color und ball_color.
+Paddle-Größen anpassen: Ändere die width- und height-Werte in der Player-Klasse, um die Länge und Breite der Schläger zu ändern.
+Ändere die Startgeschwindigkeit des Balls: Die Variable ball_speed in der Klasse game beeinflusst die Geschwindigkeit des Balls zu Beginn des Spiels.
+
+Mittlere Schwierigkeit
+
+Ballbeschleunigung: Ändere den Faktor, um den die Ballgeschwindigkeit in der Funktion increase_speed der Klasse ball erhöht wird. Ein höherer Faktor führt zu einer stärkeren Beschleunigung pro Intervall.
+Ändere die Countdown-Zeit: Die Countdown-Funktion zeigt einen 3-2-1 Countdown an. Ändere die Schleife, um die Länge des Countdowns und die angezeigten Zahlen zu ändern.
+Verändere den Schwierigkeitsgrad des Bots: Beeinflusse die Reaktionsgeschwindigkeit des Bots, indem du den Geschwindigkeitswert beim Erstellen der Gegnerinstanz anpasst.
+
+Erweiterte Aufgaben
+
+Ballwinkel: Wenn der Ball auf das Paddle trifft, ändert sich momentan nur die horizontale Bewegungsrichtung. Erweitere den Code in der Ball-Klasse in der move-Funktion so, dass je nach Auftreffpunkt des Balls auf dem Paddle auch der vertikale Winkel beeinflusst wird.
+Punktelimit: Implementiere ein Spielende, indem du einen Maximalwert für entweder self.player_score oder self.opponent_score festlegst. Zeige eine "Game Over"-Meldung an, wenn das Limit erreicht ist.
