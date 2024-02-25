@@ -1,14 +1,18 @@
-name: Build Docker Image
+name: Build and Push Docker Image
 
 on: [push]
 
 jobs:
-  build:
+  build-and-push:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
 
-    - name: Build the Docker image
+    - name: Login to GitHub Container Registry
+      run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+    - name: Build and push Docker image
       run: |
-        docker build -t pong-game .
+        docker build -t ghcr.io/${{ github.repository }}/pong-game:latest .
+        docker push ghcr.io/${{ github.repository }}/pong-game:latest
